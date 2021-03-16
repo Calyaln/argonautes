@@ -31,6 +31,9 @@ class AddArgonautes extends React.Component {
       .catch((err) => {
         console.log(err);
       });
+
+    //to empty the input after submitting
+    this.setState({ name: "" });
   };
 
   render() {
