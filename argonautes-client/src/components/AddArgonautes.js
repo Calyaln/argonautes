@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import ApiHandler from "../api/apiHandler";
+//import Button from "@material-ui/core/Button";
 
 const api = new ApiHandler();
 
@@ -26,7 +27,8 @@ class AddArgonautes extends React.Component {
         name: this.state.name,
       })
       .then((apiResponse) => {
-        console.log(apiResponse);
+        this.props.addArgonaute(apiResponse.data);
+        //console.log(apiResponse);
       })
       .catch((err) => {
         console.log(err);
@@ -50,7 +52,9 @@ class AddArgonautes extends React.Component {
             value={this.state.name}
             onChange={this.handleChange}
           />
-          <button type="submit">Envoyer</button>
+          <button type="submit" color="primary" variant="contained">
+            Envoyer
+          </button>
         </form>
       </>
     );
