@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 import ApiHandler from "../api/apiHandler";
-//import Button from "@material-ui/core/Button";
+import Button from "react-bootstrap/Button";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const api = new ApiHandler();
 
@@ -44,6 +45,7 @@ class AddArgonautes extends React.Component {
         <h2>Ajouter un(e) Argonaute</h2>
         <form className="new-member-form" onSubmit={this.handleSubmit}>
           <label htmlFor="name">Nom de l&apos;Argonaute</label>
+          <br />
           <input
             id="name"
             name="name"
@@ -51,10 +53,11 @@ class AddArgonautes extends React.Component {
             placeholder="Charalampos"
             value={this.state.name}
             onChange={this.handleChange}
-          />
-          <button type="submit" color="primary" variant="contained">
+            style={{ width: 200 }}
+          />{" "}
+          <Button type="submit" variant="secondary" size="sm">
             Envoyer
-          </button>
+          </Button>
         </form>
       </>
     );
