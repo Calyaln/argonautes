@@ -18,7 +18,7 @@ class App extends React.Component {
     api
       .get("/api/argonautes")
       .then((apiResponse) => {
-        console.log(apiResponse);
+        //console.log(apiResponse);
         this.setState({
           argonautes: apiResponse.data,
         });
@@ -28,7 +28,7 @@ class App extends React.Component {
       });
   }
 
-  handleAddArgonaute = (value) => {
+  onAddArgonaute = (value) => {
     //console.log(value);
     this.setState({
       argonautes: [value, ...this.state.argonautes],
@@ -39,7 +39,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <AddArgonautes addArgonaute={this.handleAddArgonaute} />
+        <AddArgonautes addArgonaute={this.onAddArgonaute} />
         <ArgonautesList argonautesList={this.state.argonautes} />
         <Footer />
       </div>
