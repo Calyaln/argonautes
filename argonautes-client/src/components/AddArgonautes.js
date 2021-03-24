@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import ApiHandler from "../api/apiHandler";
 import Button from "react-bootstrap/Button";
-import "bootstrap/dist/css/bootstrap.min.css";
+//import "bootstrap/dist/css/bootstrap.min.css";
 
 const api = new ApiHandler();
 
