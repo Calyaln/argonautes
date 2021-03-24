@@ -1,0 +1,19 @@
+{
+  "name": "argonautes",
+  "version": "1.0.0",
+  "description": "An test website to print Argonautes names.",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd ../server npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Calyaln/argonautes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Calyaln/argonautes/issues"
+  },
+  "homepage": "https://github.com/Calyaln/argonautes#readme"
+}
