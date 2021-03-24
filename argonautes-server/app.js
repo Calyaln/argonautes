@@ -8,6 +8,8 @@ const cors = require("cors");
 
 const app = express();
 
+console.log(process.env.MONGODB_URI);
+console.log(process.env.BACKEND_URL);
 // define who is allowed to talk to the API
 app.use(
   cors({
