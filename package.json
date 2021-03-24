@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "cd ./argonautes-server && npm install && cd ../",
-    "start": "cd ./argonautes-server npm start"
+    "start": "cd ./argonautes-server && npm start"
   },
   "repository": {
     "type": "git",
@@ -15,6 +15,9 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Calyaln/argonautes/issues"
+  },
+  "engines": {
+    "node": "14.15.0"
   },
   "homepage": "https://github.com/Calyaln/argonautes#readme"
 }
