@@ -4,8 +4,8 @@
   "description": "An test website to print Argonautes names.",
   "main": "index.js",
   "scripts": {
-    "preinstall": "cd ../argonautes-server && npm install && cd ../",
-    "start": "cd ../argonautes-server npm start"
+    "preinstall": "cd ./argonautes-server && npm install && cd ../",
+    "start": "cd ./argonautes-server npm start"
   },
   "repository": {
     "type": "git",
